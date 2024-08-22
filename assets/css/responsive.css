@@ -73,16 +73,16 @@
 
   /* home-services start  */
 
-  @media (max-width: 400px) {
+  @media (max-width: 576px) {
     .home-services-section .container {
-      top: 61%;   
+      top: 67%;   
       left: 50%; 
       transform: translate(-50%, -50%);
     }
   }
 
 
-  @media (max-width: 400px) {
+  @media (max-width: 576px) {
     .home-services-section .owl-theme .owl-nav {
   margin-bottom: 90px !important;
   
