@@ -1108,13 +1108,13 @@ font-weight: 700;
 
 .about-info-section .about-info p {
   font-family: var(--secondary-font);
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 17px;
+  line-height: 35px;
 }
 
 .about-info-section .about-info-main p {
   font-family: var(--secondary-font);
-  font-size: 18px;
+  font-size: 17px;
   line-height: 30px;
 }
 
