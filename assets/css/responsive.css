@@ -184,11 +184,16 @@
 
   @media(max-width:991px) {
     .footer .container {
-      width: 500px;
+      width: 430px;
     }
   }
   
   @media(max-width:400px) {
+    .footer .container {
+      width: 300px;
+    }
+  }
+  @media(max-width:700px) {
     .footer .container {
       width: 300px;
     }
