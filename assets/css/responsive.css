@@ -75,7 +75,7 @@
 
   @media (max-width: 576px) {
     .home-services-section .container {
-      top: 65%;   
+      top: 60%;   
       left: 50%; 
       transform: translate(-50%, -50%);
     }
