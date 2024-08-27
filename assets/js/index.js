@@ -11,14 +11,14 @@ window.onscroll = function (){
 
 document.addEventListener('DOMContentLoaded', function () {
     const carousel = document.querySelector('#carouselExampleIndicators');
-    const fireGifs = document.querySelectorAll('.fire-gif'); // Select elements with the class 'fire-gif'
+    const fireGifs = document.querySelectorAll('.fire-gif'); 
 
     carousel.addEventListener('slide.bs.carousel', function (e) {
-        fireGifs.forEach(gif => gif.style.display = 'none'); // Hide all fire gifs
-        const nextSlide = e.relatedTarget; // The next slide that will become active
+        fireGifs.forEach(gif => gif.style.display = 'none'); 
+        const nextSlide = e.relatedTarget;
         const gifInNextSlide = nextSlide.querySelector('.fire-gif');
         if (gifInNextSlide) {
-            gifInNextSlide.style.display = 'block'; // Show the fire gif in the next active slide
+            gifInNextSlide.style.display = 'block';
         }
     });
 });
@@ -121,3 +121,44 @@ document.querySelectorAll('.read-more-btn').forEach(button => {
     });
 });
 
+
+
+// contact form 
+const inputs = document.querySelectorAll(".input");
+
+function focusFunc() {
+  let parent = this.parentNode;
+  parent.classList.add("focus");
+}
+
+function blurFunc() {
+  let parent = this.parentNode;
+  if (this.value == "") {
+    parent.classList.remove("focus");
+  }
+}
+
+inputs.forEach((input) => {
+  input.addEventListener("focus", focusFunc);
+  input.addEventListener("blur", blurFunc);
+});
+
+
+
+
+// about counter
+$(document).ready(function() {
+
+    $('.counter').each(function () {
+    $(this).prop('Counter',0).animate({
+    Counter: $(this).text()
+    }, {
+    duration: 4000,
+    easing: 'swing',
+    step: function (now) {
+    $(this).text(Math.ceil(now));
+    }
+    });
+    });
+    
+    });
